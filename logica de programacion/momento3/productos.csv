@@ -1,0 +1,11 @@
+id_producto,nombre_producto,descrip_producto,marca,id_categoria
+1,Martillo de carpintero,Martillo de cabeza de acero,Stanley,1
+2,Llave inglesa ajustable,Llave ajustable para tuercas,Truper,1
+3,Taladro inal?mbrico,Taladro a bater?a 18V,Bosch,2
+4,Sierra circular el?ctrica,Sierra para cortes precisos,Makita,2
+5,Calibrador digital,Medidor digital de precisi?n,Mitutoyo,3
+6,Mult?metro digital,Medidor el?ctrico y voltaje,Fluke,3
+7,Broca para metal,Broca de acero para perforar,Dewalt,4
+8,Disco de corte,Disco para amoladora,Bosch,4
+9,Tornillo autorroscante,Tornillo para madera de 3cm,Grip-Rite,5
+10,Juego de fijaciones mixtas,Kit de tornillos y clavos,Fischer,5
