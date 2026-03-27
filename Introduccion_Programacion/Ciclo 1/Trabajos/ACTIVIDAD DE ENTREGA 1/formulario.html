@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alejandro Contreras">
+  <title>Formularios</title>
+</head>
+<body>
+  <form action="", method="get" style="width: 50%;">
+    <fieldset>
+      <legend>REGISTRO</legend>
+      
+      <label for="nombre">Nombre Usuario: </label>
+      <input type="text" name="Nombre" placeholder="Nombre" required><br>
+      
+      <label for="Apellido">Apellido Usuario: </label>
+      <input type="text" name="Apellido" placeholder="Apellido" required><br>
+      
+      <label for="correo">Correo electrónico: </label>
+      <input type="email" name="correo" id="correo", placeholder="CorreoElectronico" required><br>
+      
+      <label for="telefono">Numero Celular: </label>
+      <input type="tel" name="telefono" id="telefono" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="NumeroCelular" required><br>
+      
+      <label for="password">Colocar una constraseña: </label>
+      <input type="password" name="password" placeholder="Contraseña" required><br>
+      
+      <label for="password_confirm">Confirmar la constraseña: </label>
+      <input type="password" name="password_confirm" placeholder="ConfirmarContraseña" required><br>
+      
+      <label for="fecha_nac">Fecha Nacimiento: </label>
+      <input type="date" name="fecha_nac" id="fecha_nac" placeholder="FechaDeNacimiento" required><br>
+
+      <label for="Ft_Perfil">Foto de Perfil: </label>
+      <input type="file" name="Ft_Perfil" id="Ft_Perfil" required><br>
+
+      <label for="departamento">Departamento de residencia: </label>
+      <select name="departamento" id="departamento" required>
+        <option value="">Antioquia</option>
+        <option value="">Boyaca</option>
+        <option value="">Caldas</option>
+        <option value="">Cundinamarca</option>
+        <option value="">Huila</option>
+        <option value="">Valle del Cauca</option>
+        <option value="">Atlantico</option>
+        <option value="">Bolivar</option>
+        <option value="">Santander</option>
+        <option value="">Nariño</option>
+      </select>
+      <form action="" method="get">
+        <fieldset>
+          <legend> GENERO </legend>
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="masculino" id="masculino" ><br>
+          <label for="femenino">Femenino</label>
+          <input type="radio" name="femenino" id="femenino" ><br>
+          <label for="Otro">Otro</label>
+          <input type="radio" name="Otro" id="Otro" >
+        </fieldset>
+      </form>
+      <form action="" method="get">
+        <fieldset>
+          <legend>INTERESES</legend>
+          <label for="deporte">Deportes</label>
+          <input type="radio" name="deporte" id="deporte"><br>
+          <label for="tecnologia">Tecnologìa</label>
+          <input type="radio" name="tecnologia" id="tecnologia" ><br>
+          <label for="musica">Musica</label>
+          <input type="radio" name="musica" id="musica" ><br>
+          <label for="arte">Arte</label>
+          <input type="radio" name="arte" id="arte" ><br>
+        </fieldset>
+      </form>
+      <label for="mensaje">Danos un mensaje</label>
+      <input type="text" name="mensaje" id="mensaje" placeholder="Escribe un mensaje..."><br>
+      <label for="satisfaccion">Nivel de satisfaccion</label>
+      <input type="range" name="satisfaccion" id="satisfaccion"  required><br>
+      <label for="numero">Numero Favorito</label>
+      <input type="text" name="numero" id="numero" required style="width: 6%;"><br>
+      <label for="color">Color Favorito</label>
+      <input type="color" name="color" id="color" required><br>
+      <label for="web">Sitio Web personal</label>
+      <input type="text" name="web" id="web" required placeholder="htpps://www.ejemplo.com"><br>
+      <input type="submit" value="Enviar"> 
+      <input type="reset" value="Limpiar">
+    </fieldset>
+  </form>
+</body>
+</html>

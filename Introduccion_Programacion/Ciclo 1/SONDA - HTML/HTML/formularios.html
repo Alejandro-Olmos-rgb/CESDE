@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Alejandro Olmos">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios en HTML</title>
+</head>
+
+<body>
+<section style="width: 100%; border-radius: 5px;
+          background-color: rgba(12, 102, 238, 0.76);">
+  <form action="enviar.php" method="post" style="font-size: 1.2rem;">
+    <fieldset>
+      <legend>Información personal</legend>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono"
+      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+    </fieldset>
+   
+    <fieldset>
+      <legend>Información de la compra</legend>
+      <label for="producto">Producto:</label>
+      <select id="producto" name="producto">
+      <option value="opcion1">Opción 1</option>
+      <option value="opcion2">Opción 2</option>
+      <option value="opcion3">Opción 3</option>
+      </select>
+      <label for="cant">Cantidad:</label>
+      <input type="number" id="cant" name="cant" min="1" max="10"><br>
+      </fieldset>
+      <input type="submit" value="Enviar">
+      </form>
+  </section>
+<hr>
+
+<form action="" style="width: 30%; font-size: 1.2rem;">
+<fieldset>
+<legend>Input Types</legend>
+<input type="text" name="nombre" placeholder="Ingrese su nombre" required><br><br>
+<input type="password" name="psw" placeholder="Ingrese su contraseña"required><br><br>
+<input type="checkbox" name="deportes" value="futbol" required> Fútbol<br>
+<input type="checkbox" name="deportes" value="tenis" required> Tenis<br><br>
+<input type="radio" name="genero" value="masculino" required> Masculino<br>
+<input type="radio" name="genero" value="femenino" required> Femenino<br><br>
+<input type="number" name="edad" min="1" max="110" placeholder="Edad" required><br><br>
+<input type="email" name="correo" placeholder="correo electrónico" required><br><br>
+<input type="datetime-local" name="fecha_nac" required><br><br>
+<input type="file" name="archivo_adjunto" required><br><br>
+<input type="range" name="volumen" min="0" max="100" step="2" required><br><br>
+<input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-444-0000" required><br>
+<input type="color" name="color" id="" value="#9FF527"><br><br>
+<input type="submit" value="Enviar" required>
+<input type="reset" value="Borrar Datos" required>
+</fieldset>
+</form>
+
+  <hr>
+
+
+  <select name="Cursos" id="">
+    <option value="JavaScript">JavaScript</option>
+    <option value="HTML 5">HTML 5</option>
+    <option value="CSS 3">CSS 3</option>
+    <option value="WebSemantica">Web Semantica</option>
+  </select>
+
+  <input list="cursos">
+  <datalist id="cursos">
+    <option value="JavaScript"></option>
+    <option value="HTML 5"></option>
+    <option value="CSS 3"></option>
+    <option value="WebSemantica"></option>
+  </datalist>
+
+  <form action="" method="post">
+    <input type="text" name="color" id="" placeholder="Escriba un color:">
+    <button type="submit">¿Que color te gusta?</button><br><br>
+    <button onclick="alert('Boton Personalizado!')">Boton Personalizado</button>
+    <br><br>
+    <button onclick="alert('Hola Globant')">Saludo</button>
+  </form>
+
+</body>
+</html>
