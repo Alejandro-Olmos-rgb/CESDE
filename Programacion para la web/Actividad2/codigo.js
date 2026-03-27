@@ -6,9 +6,9 @@ tiempo = prompt ("Digite la hora (hh:mm:ss)");
 
 //PROCESO
 partes = tiempo.split(":");
-hr = partes[0];
-mn = partes[1];
-sg = partes[2];
+hr = parseInt(partes[0]);
+mn = parseInt(partes[1]);
+sg = parseInt(partes[2]);
 
 //RESULTADO
 if(hr==23 && mn ==59 && sg==59){
